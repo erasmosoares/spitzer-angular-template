@@ -1,0 +1,17 @@
+<div class="container">
+  <section class="section">
+    <h1 class="title">Testimonial</h1>
+    <h2 class="subtitle is-4">Lorum ipsum.</h2>
+
+    <div class="columns">
+      <div class="column is-one-third" *ngFor="let faq of (faqs ? faqs.slice(0,10): [])">
+        <div class="card"> 
+          <div class="card-content">
+            <p class="title">{{ faq.title }}</p>
+            <p class="answer">{{ faq.body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
